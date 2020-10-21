@@ -13,7 +13,7 @@ from machine import I2C
 class LCD1602():
     def __init__(self, i2c, addr=0x27):
         self.i2c=i2c
-		self.addr = addr
+        self.addr = addr
         self.buf = bytearray(1)
         self.BK = 0x08
         self.RS = 0x00
